@@ -1,0 +1,25 @@
+.wrapper {
+  text-align: center;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #c0392b;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.homeLink {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+}

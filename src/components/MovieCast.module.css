@@ -1,0 +1,45 @@
+.castList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.castItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actorImage {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.actorName {
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.character {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.message {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  margin-top: 30px;
+}

@@ -1,0 +1,31 @@
+.container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.movieList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movieList li {
+  margin-bottom: 10px;
+}
+
+.movieLink {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+.movieLink:hover {
+  text-decoration: underline;
+}
