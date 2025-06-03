@@ -1,24 +1,21 @@
-import { Routes, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import css from "./Navigation.module.css";
 
-import HomePage from "./pages/HomePage";
-import MoviesPage from "./pages/MoviesPage";
-import NotFoundPage from "./pages/NotFoundPage";
-import MovieDetailsPage from "./pages/MovieDetailsPage";
-
-import Navigation from "./components/Navigation";
-
-function App() {
+export default function Navigation() {
   return (
-    <>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/movies" element={<MoviesPage />} />
-        <Route path="/movies/:movieId" element={<MovieDetailsPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </>
+    <nav className={css.nav}>
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? css.active : css.link)}
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/movies"
+        className={({ isActive }) => (isActive ? css.active : css.link)}
+      >
+        Movies
+      </NavLink>
+    </nav>
   );
 }
-
-export default App;
